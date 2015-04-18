@@ -13,7 +13,7 @@
 // ファイル一覧検索  
 http://flashpair.azurewebsites.net/filelist.json?cid=11111  
 
-// ファイルダウンロード 
+// ファイルダウンロード   
 http://flashpair.azurewebsites.net/filedownload.json?cid=11111&fileid=xx  
 ※xxに1はファイル一覧検索結果のidを設定してください。  
 
