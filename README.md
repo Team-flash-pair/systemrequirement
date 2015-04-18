@@ -9,7 +9,32 @@
 2. 受信確認用治具作成
 
 #### サーバ側
+※cidがカードのユニークID、groupidがカードのグループID想定です。何も考えず固定で付けてください。
+// ファイル一覧検索
+http://flashpair.azurewebsites.net/filelist.json?cid=11111
 
+// ファイルダウンロード
+http://flashpair.azurewebsites.net/filedownload.json?cid=11111&fileid=xx
+※xxに1はファイル一覧検索結果のidを設定してください。
+
+// ファイルアップロード
+http://flashpair.azurewebsites.net/fileupload.json?cid=11111
+上記にname="upfile"でファイルをPOSTする。
+
+--テスト時のソース--
+<html>
+<head>
+<title>ClearDB:アップロード</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body bgcolor="#FFFFFF" text="#000000">
+<form name="form1" method="post" action="http://flashpair.azurewebsites.net/fileupload.json?cid=11111" enctype="multipart/form-data">
+<input type="file" name="upfile" size="60">
+<BR>
+<input type="submit" name="submit" value="送信">
+</form>
+</body>
+</html>
 
 ---
 ## role
