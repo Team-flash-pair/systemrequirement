@@ -23,7 +23,7 @@ ex)https://flashpair.blob.core.windows.net/images/cat01.jpg
 ・ファイルアップロード(Post)  
 http://flashpair2.cloudapp.net/api/file/Post?fileName=(ファイル名)  
 ex)http://flashpair2.cloudapp.net/api/file/Post?fileName=cat01.jpg  
-※MSの太田さんのサンプルのURL差し替えでそのまま動くはずです。  
+※MSの太田さんのサンプルのURL差し替えでそのまま動くと思います。  
   
 【旧版】
 ※cidがカードのユニークID、groupidがカードのグループID想定です。何も考えず固定で付けてください。  
