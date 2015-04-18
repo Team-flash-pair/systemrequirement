@@ -9,19 +9,19 @@
 2. 受信確認用治具作成
 
 #### サーバ側
-※cidがカードのユニークID、groupidがカードのグループID想定です。何も考えず固定で付けてください。
-// ファイル一覧検索
-http://flashpair.azurewebsites.net/filelist.json?cid=11111
+※cidがカードのユニークID、groupidがカードのグループID想定です。何も考えず固定で付けてください。  
+// ファイル一覧検索  
+http://flashpair.azurewebsites.net/filelist.json?cid=11111  
 
-// ファイルダウンロード
-http://flashpair.azurewebsites.net/filedownload.json?cid=11111&fileid=xx
-※xxに1はファイル一覧検索結果のidを設定してください。
+// ファイルダウンロード 
+http://flashpair.azurewebsites.net/filedownload.json?cid=11111&fileid=xx  
+※xxに1はファイル一覧検索結果のidを設定してください。  
 
-// ファイルアップロード
-http://flashpair.azurewebsites.net/fileupload.json?cid=11111
-上記にname="upfile"でファイルをPOSTする。
+// ファイルアップロード  
+http://flashpair.azurewebsites.net/fileupload.json?cid=11111  
+上記にname="upfile"でファイルをPOSTする。  
 
---テスト時のソース--
+--テスト時のソース--  
 <html>
 <head>
 <title>ClearDB:アップロード</title>
