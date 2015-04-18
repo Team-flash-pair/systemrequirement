@@ -9,6 +9,23 @@
 2. 受信確認用治具作成
 
 #### サーバ側
+【AzureCloudapp】
+・ファイル一覧取得(Get)
+http://flashpair2.cloudapp.net/api/file/Get
+
+・最終更新ファイル名取得(Get)
+http://flashpair2.cloudapp.net/api/file/Getlastfilename
+
+・ファイルURL(Get)
+https://flashpair.blob.core.windows.net/images/(ファイル名)
+ex)https://flashpair.blob.core.windows.net/images/cat01.jpg
+
+・ファイルアップロード(Post)
+http://flashpair2.cloudapp.net/api/file/Post?fileName=(ファイル名)
+ex)http://flashpair2.cloudapp.net/api/file/Post?fileName=cat01.jpg
+※MSの太田さんのサンプルのURL差し替えでそのまま動くはずです。
+
+【旧版】
 ※cidがカードのユニークID、groupidがカードのグループID想定です。何も考えず固定で付けてください。  
 // ファイル一覧検索  
 http://flashpair.azurewebsites.net/filelist.json?cid=11111  
